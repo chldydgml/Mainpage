@@ -20,8 +20,4 @@ public class Fragment_search extends Fragment {
         return v;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
 }

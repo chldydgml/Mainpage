@@ -42,8 +42,4 @@ public class Fragment_home extends Fragment {
 
         return v;
     }
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
 }

@@ -20,8 +20,5 @@ public class Fragment_login extends Fragment {
         return v;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+
 }

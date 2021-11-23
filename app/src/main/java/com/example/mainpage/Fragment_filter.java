@@ -20,9 +20,4 @@ public class Fragment_filter extends Fragment {
         return v;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-    }
 }
