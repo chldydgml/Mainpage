@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tab_home"
+        android:enabled="true"
+        android:icon="@drawable/icon_home"
+        android:title="홈"
+        />
+    <item
+        android:id="@+id/tab_search"
+        android:enabled="true"
+        android:icon="@drawable/search"
+        android:title="검색"
+        />
+    <item
+        android:id="@+id/tab_login"
+        android:enabled="true"
+        android:icon="@drawable/icon_person"
+        android:title="로그인"
+        />
+    <item
+        android:id="@+id/tab_filter"
+        android:enabled="true"
+        android:icon="@drawable/icon_feather_filter2"
+        android:title="필터"
+        />
+</menu>
