@@ -1,5 +1,6 @@
 package com.example.mainpage;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
@@ -33,6 +35,15 @@ public class Fragment_home extends Fragment {
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
         mainRv.setLayoutManager(mLayoutManager);
         mainRv.setAdapter(mAdapter);
+
+        mAdapter.setOnItemClickListener(new MainAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View v, int pos) {
+                Intent intent = new Intent(v.getContext(), PopupActivity.class);
+                intent.putExtra("data", "청년 월세 지원 정책");
+                startActivity(intent);
+            }
+        });
 
 
 
