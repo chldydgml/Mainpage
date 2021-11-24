@@ -18,7 +18,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class LoginActivity extends AppCompatActivity {
-
+    private FirebaseAuth mFirebaseAuth; // 파이어베이스 인증 처리
+    private DatabaseReference mDatabaseReference; //실시간 데이터 베이스
+    private EditText mEtEmail, mEetPwd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

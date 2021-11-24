@@ -52,7 +52,7 @@ public class Fragment_login extends Fragment {
                             //로그인 성공
                             Intent intent = new Intent(getActivity(), MainActivity.class);
                             startActivity(intent);
-                           // finish(); // 현재 액티비티 파괴
+                            // finish(); // 현재 액티비티 파괴
                         }else{
                             Toast.makeText(getActivity(),"로그인 실패", Toast.LENGTH_SHORT).show();
                         }
