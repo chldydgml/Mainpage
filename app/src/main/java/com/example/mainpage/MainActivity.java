@@ -1,5 +1,6 @@
 package com.example.mainpage;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom);
         getSupportFragmentManager().beginTransaction().replace(R.id.container, new Fragment_home()).commitAllowingStateLoss();
 
@@ -37,5 +39,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
         );
+
+
     }
 }
