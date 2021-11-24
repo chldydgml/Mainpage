@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Provision_Activity">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginLeft="147dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginRight="133dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="5sp"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="이용약관" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:layout_marginTop="17dp"
+        android:background="#f29849"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"></View>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginRight="137dp"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#201e1c"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        tools:text="청정 서비스 개인정보 보호약관" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_marginTop="13dp"
+        android:background="#80f29849"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"></View>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="222dp"
+        android:layout_marginRight="222dp"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6"
+        tools:text="[현행] 2021년 09월 30일 시행안" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_marginTop="26dp"
+        android:background="#80f29849"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="290dp"
+        android:layout_marginRight="290dp"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#201e1c"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view7"
+        tools:text="제 1조 (목적)" />
+
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="463dp"
+        android:layout_marginBottom="16dp"
+        android:lineSpacingExtra="3.5sp"
+        android:textColor="#000000"
+        android:textSize="13.5sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="“개인정보”란 살아 있는 개인에 관한 정보로서 다음 각 목의 어느
+하나에 해당하는 정보를 말한다.
+가. 성명, 주민등록번호 및 영상 등을 통하여 개인을 알아볼 수 있
+는 정보
+나. 해당 정보만으로는 특정 개인을 알아볼 수 없더라도 다른 정보
+와 쉽게 결합하여 알아볼 수 있는 정보.이 경우 쉽게 결합할 수 있
+는지 여부는 다른 정보의 입수 가능성 등 개인을 알아보는 데 소요
+되는 시간, 비용, 기술 등을 합리적으로 고려하여야 한다.
+다. 가목 또는 나목을 제1호의2에 따라 가명처리함으로써 원래의
+상태로 복원하기 위한 추가 정보의 사용ㆍ결합 없이는 특정 개인을
+알아볼 수 없는 정보(이하 “가명정보”라 한다) 1의2. “가명처리”란
+개인정보의 일부를 삭제하거나 일부 또는 전부를 대체하는 등의
+방법으로 추가 정보가 없이는 특정 개인을 알아볼 수 없도록 처리
+하는 것을 말한다.
+2. “처리”란 개인정보의 수집, 생성, 연계, 연동, 기록, 저장, 보유,
+가공, 편집, 검색, 출력, 정정(訂正), 복구, 이용, 제공, 공개, 파기
+(破棄), 그 밖에 이와 유사한 행위를 말한다.
+3. “정보주체”란 처리되는 정보에 의하여 알아볼 수 있는 사람으로
+서 그 정보의 주체가 되는 사람을 말한다.
+4. “개인정보파일”이란 개인정보를 쉽게 검색할 수 있도록 일정한
+규칙에 따라 체계적으로 배열하거나 구성한 개인정보의 집합물
+(集合物)을 말한다.
+5. “개인정보처리자”란 업무를 목적으로 개인정보파일을 운용하기
+위하여 스스로 또는 다른 사람을 통하여 개인정보를 처리하는
+공공기관, 법인, 단체 및 개인 등을 말한다.
+6. “공공기관”이란 다음 각 목의 기관을 말한다.
+가. 국회, 법원, 헌법재판소, 중앙선거관리위원회의 행정사무를 처" />
+</androidx.constraintlayout.widget.ConstraintLayout>

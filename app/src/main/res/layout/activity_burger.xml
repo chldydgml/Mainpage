@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Burger_Activity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:background="#ccf29849"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        tools:text="청년들을 위한 정책 " />
+
+    <View
+        android:layout_width="199.4dp"
+        android:layout_height="2dp"
+        android:background="#0000FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133"></View>
+
+    <TextView
+        android:id="@+id/menu1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="360dp"
+        android:layout_marginRight="360dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        tools:text="댓글" />
+
+    <TextView
+        android:id="@+id/menu2"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="360dp"
+        android:layout_marginRight="360dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu1"
+        tools:text="정책" />
+
+    <TextView
+        android:id="@+id/menu3"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="360dp"
+        android:layout_marginRight="360dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu2"
+        tools:text="문의" />
+
+    <TextView
+        android:id="@+id/menu4"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="325dp"
+        android:layout_marginRight="325dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu3"
+        tools:text="법저고지" />
+
+    <TextView
+        android:id="@+id/menu5"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginRight="268dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu4"
+        tools:text="서비스 이용약관" />
+
+    <TextView
+        android:id="@+id/menu6"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="255dp"
+        android:layout_marginRight="255dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu5"
+        tools:text="개인정보처리방침" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

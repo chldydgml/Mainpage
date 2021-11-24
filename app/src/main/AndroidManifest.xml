@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mainpage">
+        <activity android:name=".Mypage_Activity"></activity>
+        <activity android:name=".Provision_Activity" />
+        <activity android:name=".Burger_Activity" />
+        <activity android:name=".Reason_Activity" />
+        <activity android:name=".Question_Activity" />
         <activity android:name=".LoadingActivity">
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
             <intent-filter>
@@ -17,13 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PopupActivity"
+        <activity
+            android:name=".PopupActivity"
             android:theme="@style/DialogTheme" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

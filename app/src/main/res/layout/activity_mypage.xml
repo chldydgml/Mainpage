@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mypage_Activity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:lineSpacingExtra="5sp"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="나의 청정" />
+
+    XMLXML
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="127dp"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#000000"
+        android:textSize="21sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="보보님" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="156dp"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#000000"
+        android:textSize="21sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="반갑습니다" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="238dp"
+        android:layout_marginRight="238dp"
+        android:lineSpacingExtra="2sp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="24세, 청년 취업정책 관심 " />
+
+    XMLXML
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:layout_marginTop="61dp"
+        android:background="#f29849"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"></View>
+
+    <TextView
+        android:id="@+id/menu1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginRight="248dp"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        tools:text="관심 정책 관리" />
+
+    <TextView
+        android:id="@+id/menu2"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginRight="244dp"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu1"
+        tools:text="개인 정보 관리 " />
+
+    <TextView
+        android:id="@+id/menu3"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="282dp"
+        android:layout_marginRight="282dp"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu2"
+        tools:text="공지사항 " />
+
+    <TextView
+        android:id="@+id/menu4"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginRight="244dp"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu3"
+        tools:text="필터 설정 관리 " />
+
+    <TextView
+        android:id="@+id/menu5"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="259dp"
+        android:layout_marginRight="259dp"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu4"
+        tools:text="앱 설정 관리 " />
+
+    <TextView
+        android:id="@+id/menu6"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginRight="244dp"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu5"
+        tools:text="자주 묻는 질문 " />
+</androidx.constraintlayout.widget.ConstraintLayout>
