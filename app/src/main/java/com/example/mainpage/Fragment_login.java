@@ -22,9 +22,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Fragment_login extends Fragment {
-    private FirebaseAuth mFirebaseAuth; // 파이어베이스 인증 처리
-    private DatabaseReference mDatabaseReference; //실시간 데이터 베이스
-    private EditText mEtEmail, mEetPwd;
+    private FirebaseAuth mFirebaseAuth = FirebaseAuth.getInstance(); // 파이어베이스 인증 처리
+    private DatabaseReference mDatabaseReference = FirebaseDatabase.getInstance().getReference("FBLoginLast"); //실시간 데이터 베이스
+    private EditText mEtEmail;
+    private EditText mEetPwd;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -32,14 +33,9 @@ public class Fragment_login extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_login, container, false);
 
-        return v;
-
-
-        mFirebaseAuth = FirebaseAuth.getInstance();
-        mDatabaseReference = FirebaseDatabase.getInstance().getReference("FBLoginLast");
 
         mEtEmail = v.findViewById(R.id.value_id);
-        mEetPwd= v.findViewById(R.id.value_pw);
+        mEetPwd = v.findViewById(R.id.value_pwd);
 
         Button btn_login = v.findViewById(R.id.button_login);
         btn_login.setOnClickListener(new View.OnClickListener() {
@@ -73,5 +69,7 @@ public class Fragment_login extends Fragment {
                 startActivity(intent);
             }
         });
+
+        return v;
     }
 }
