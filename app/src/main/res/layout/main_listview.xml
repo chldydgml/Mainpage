@@ -8,7 +8,7 @@
     <TextView
         android:id="@+id/List1"
         android:layout_width="345dp"
-        android:layout_height="360dp"
+        android:layout_height="380dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/search1"
         android:text=""
@@ -80,7 +80,23 @@
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/face_icon1"
         app:layout_constraintTop_toBottomOf="@+id/star_icon1" />
-
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/age"
+        app:layout_constraintTop_toBottomOf="@id/age"/>
+    <TextView
+        android:id="@+id/tv_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/time_icon1"
+        app:layout_constraintTop_toBottomOf="@id/time_icon1"/>
     <ImageView
         android:id="@+id/time_icon1"
         android:layout_width="wrap_content"

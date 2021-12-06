@@ -4,27 +4,31 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_main"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_main_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mainpage">
-        <activity android:name=".MypageActivity"></activity>
+        <activity android:name=".FilterActivity"></activity>
+        <activity android:name=".MypageActivity" />
         <activity android:name=".LoadingActivity">
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-
-        </activity>
-        <activity
-            android:name=".PopupActivity"
-            android:theme="@style/DialogTheme" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Burger_Activity" />
+        <activity android:name=".Provision_Activity" />
+        <activity android:name=".Question_Activity" />
+        <activity
+            android:name=".PopupActivity"
+            android:theme="@style/DialogTheme" />
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 

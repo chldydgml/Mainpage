@@ -1,69 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/drawerView"
-    android:layout_width="280dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="end"
-    android:background="#EFF0F4"
-    android:orientation="vertical">
-    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+    >
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#F29849"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/sign"
+        <View
+            android:id="@+id/top_back2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#f29849"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/img_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="200dp"
-            android:text="회원가입"
-            android:textColor="#FFFFFF"
-            android:textSize="40px"
-            android:textStyle="bold"
-            app:backgroundTint="#F29849" />
+            app:srcCompat="@drawable/icon_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/login"
+            app:layout_constraintStart_toStartOf="parent"/>
+
 
         <Button
             android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="42dp"
-            android:layout_marginTop="200dp"
-            android:layout_toRightOf="@+id/sign"
-            android:text="로그인"
+            android:text="로그아웃"
             android:textColor="#FFFFFF"
             android:textSize="40px"
-            android:textStyle="bold"
-            app:backgroundTint="#F29849" />
+            android:layout_marginTop="120dp"
+            app:layout_constraintTop_toBottomOf="@id/title_burger"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:backgroundTint="#F29849"
+            app:layout_constraintStart_toStartOf="parent"/>
 
 
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/title_burger"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
             android:layout_marginTop="50dp"
             android:text="청년들을 위한 정책"
-            android:textSize="55px"
-            android:textStyle="bold" />
+            android:textSize="23dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <LinearLayout
+            app:layout_constraintTop_toBottomOf="@+id/top_back2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="260dp"
             android:background="@color/white">
 
             <TextView
@@ -134,6 +130,5 @@
                 android:textStyle="bold" />
 
         </LinearLayout>
-    </RelativeLayout>
-    </androidx.core.widget.NestedScrollView>
-</androidx.drawerlayout.widget.DrawerLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -28,6 +28,8 @@ public class MainAdapter extends RecyclerView.Adapter <MainAdapter.MyViewHolder>
         protected TextView p_title;
         protected TextView timeline;
         protected TextView age;
+        private TextView gender;
+        private TextView local;
 
 
         public MyViewHolder(@NonNull View itemView) {
@@ -36,6 +38,8 @@ public class MainAdapter extends RecyclerView.Adapter <MainAdapter.MyViewHolder>
             this.p_title = (TextView) itemView.findViewById(R.id.p_title);
             this.timeline = (TextView) itemView.findViewById(R.id.timeline);
             this.age = (TextView) itemView.findViewById(R.id.age);
+            gender = itemView.findViewById(R.id.tv_gender);
+            local = itemView.findViewById(R.id.tv_local);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -69,10 +73,21 @@ public class MainAdapter extends RecyclerView.Adapter <MainAdapter.MyViewHolder>
         holder.p_title.setText(arrayList.get(position).getP_title());
         holder.timeline.setText(arrayList.get(position).getTimeline());
         holder.age.setText(arrayList.get(position).getAge());
+        holder.gender.setText(arrayList.get(position).getGender());
+        holder.local.setText(arrayList.get(position).getLocal());
     }
 
     @Override
     public int getItemCount() {
         return arrayList.size();
+    }
+
+    public Policy getItem(int position) {
+        return arrayList.get(position);
+    }
+
+    public void  filterList(ArrayList<Policy> filteredList) {
+        arrayList = filteredList;
+        notifyDataSetChanged();
     }
 }

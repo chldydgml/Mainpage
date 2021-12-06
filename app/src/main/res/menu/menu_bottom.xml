@@ -23,6 +23,6 @@
         android:id="@+id/tab_login"
         android:enabled="true"
         android:icon="@drawable/icon_person"
-        android:title="로그인"
+        android:title="회원"
         />
 </menu>

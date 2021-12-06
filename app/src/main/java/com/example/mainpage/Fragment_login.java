@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -26,6 +27,7 @@ public class Fragment_login extends Fragment {
     private DatabaseReference mDatabaseReference = FirebaseDatabase.getInstance().getReference("FBLoginLast"); //실시간 데이터 베이스
     private EditText mEtEmail;
     private EditText mEetPwd;
+    private MainActivity activity;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,7 +35,7 @@ public class Fragment_login extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_login, container, false);
 
-
+        activity = (MainActivity)getActivity();
         mEtEmail = v.findViewById(R.id.value_id);
         mEetPwd = v.findViewById(R.id.value_pwd);
 
@@ -50,9 +52,8 @@ public class Fragment_login extends Fragment {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             //로그인 성공
-                            Intent intent = new Intent(getActivity(), MainActivity.class);
-                            startActivity(intent);
-                            // finish(); // 현재 액티비티 파괴
+                            Toast.makeText(getActivity(), "환영합니다.", Toast.LENGTH_SHORT).show();
+                            activity.replaceFragment(true);
                         }else{
                             Toast.makeText(getActivity(),"로그인 실패", Toast.LENGTH_SHORT).show();
                         }

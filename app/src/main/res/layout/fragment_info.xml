@@ -13,7 +13,134 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="청정 " />
 
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="청년들이 꼭 써야하는 이유 " />
+
+        <View
+            android:id="@+id/r_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_marginTop="28dp"
+            android:background="#f29849"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"/>
+
+        <TextView
+            android:id="@+id/title_r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4sp"
+            android:textSize="20sp"
+            android:textColor="#f29849"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/r_line1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="만든 취지" />
+
+        <TextView
+            android:id="@+id/text_r1"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/title_r1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text=" 지금 정부가 제공해주는 청년정책은 취업지원,
+창업지원, 주거, 금융, 생활, 복지 등 다양한
+분야와 정말 많은 정책들이 있습니다.
+근데 정작 우리, 청년들은 알고있지도, 그 정책으로
+혜택을 받고 있지도 않습니다.
+그래서 당장 필요한 것들을 줄 수 있는 청년정책 맞춤 애플리케이션을 만든 것입니다 !" />
+
+        <View
+            android:id="@+id/r_line2"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:background="#80f29849"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_r1" />
+
+        <TextView
+            android:id="@+id/title_r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f29849"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/r_line2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="청년들에게 기대하는 바람 " />
+
+        <TextView
+            android:id="@+id/text_r2"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_r2"
+            android:text=" 지금 청년들은 정치에 대해서 생각하면 대부분 관심없다,
+어렵다 등 부정적인 인식과 단어들을 나열하는게 사실입니다.
+하지만 이러한 부정적인 시선속에서도 청년들이 자신에게
+맞는, 몰랐지만 필요했던 정책들에 참여하고,
+정책에 관한 관심과 혜택을 받는 청년들이 증가한다면
+청년정책뿐만 아니라 국가 정책에도 관심을
+가지게 될 것이라고 생각합니다. "/>
+
+        <TextView
+            android:id="@+id/text_r3"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:text=" 국가의 정책은
+나와 관계없는 이야기로 생각하던 청년들의
+과거의 모습에서 벗어나 국가 정책에 있어
+ 적극적으로 참여하는 민주시민의
+양성에도 이바지할 것으로 전망하고 기대하고 있습니다."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_r2"/>
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:background="#80f29849"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_r3"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 </FrameLayout>

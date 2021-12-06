@@ -5,13 +5,19 @@ public class Policy {
     private String p_title;
     private String timeline;
     private String age;
+    private String gender;
+    private String local;
 
+    public Policy() {
+    }
 
-    public Policy(int image, String p_title, String timeline, String age) {
+    public Policy(int image, String p_title, String timeline, String age, String gender, String local) {
         this.image = image;
         this.p_title = p_title;
         this.timeline = timeline;
         this.age = age;
+        this.gender = gender;
+        this.local = local;
     }
 
     public int getImage() {
@@ -40,5 +46,21 @@ public class Policy {
     }
     public void setAge(String age) {
         this.age = age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getLocal() {
+        return local;
+    }
+
+    public void setLocal(String local) {
+        this.gender = local;
     }
 }
